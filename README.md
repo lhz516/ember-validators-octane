@@ -1,14 +1,14 @@
-# Ember Validators
+# Ember Validators Octane
 
 [![Build Status](https://travis-ci.org/offirgolan/ember-validators.svg)](https://travis-ci.org/offirgolan/ember-validators)
 [![npm version](https://badge.fury.io/js/ember-validators.svg)](http://badge.fury.io/js/ember-validators)
 
-A collection of EmberJS validators
+A collection of EmberJS validators to support Octane edition. Forked from https://github.com/offirgolan/ember-validators
 
 ## Installation
 
 ```shell
-ember install ember-validators
+ember install ember-validators-octane
 ```
 
 ## Helpful Links
@@ -25,8 +25,8 @@ If it is a bug [please open an issue on GitHub](http://github.com/offirgolan/emb
 Validators can be individually imported and used as such
 
 ```js
-import validatePresence from 'ember-validators/presence';
-import validateLength from 'ember-validators/length';
+import validatePresence from 'ember-validators-octane/presence';
+import validateLength from 'ember-validators-octane/length';
 
 validatePresence('foo', { presence: true });
 validateLength('foo', { min: 1 });
@@ -35,7 +35,7 @@ validateLength('foo', { min: 1 });
 or via the **validate** method provided
 
 ```js
-import { validate } from 'ember-validators';
+import { validate } from 'ember-validators-octane';
 
 validate('presence', 'foo', { presence: true });
 validate('length', 'foo', { min: 1 });

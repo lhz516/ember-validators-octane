@@ -1,4 +1,3 @@
-import { set } from '@ember/object';
 import Messages from 'ember-validators/messages';
 
 export default function processResult(result) {
@@ -9,7 +8,7 @@ export default function processResult(result) {
       return message;
     }
 
-    set(context, 'description', Messages.getDescriptionFor(undefined, context));
+    context.description = Messages.getDescriptionFor(undefined, context);
     return Messages.getMessageFor(type, context);
   }
 

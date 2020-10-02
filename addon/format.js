@@ -1,6 +1,6 @@
 import { isEmpty, isNone } from '@ember/utils';
 import { assert } from '@ember/debug';
-import { getProperties, set } from '@ember/object';
+import { getProperties } from '@ember/object';
 
 import Ember from 'ember';
 import validationError from 'ember-validators/utils/validation-error';
@@ -54,7 +54,7 @@ export default function validateFormat(value, options, model, attribute) {
       regex = formatEmailRegex(options);
     }
 
-    set(options, 'regex', regex);
+    options.regex = regex;
   }
 
   if (!canInvoke(value, 'match') || (regex && isEmpty(value.match(regex)) !== inverse)) {

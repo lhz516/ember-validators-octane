@@ -1,5 +1,5 @@
 import { isEmpty, isNone } from '@ember/utils';
-import { set, getProperties, getWithDefault } from '@ember/object';
+import { getProperties, getWithDefault } from '@ember/object';
 import validationError from 'ember-validators/utils/validation-error';
 import requireModule from 'ember-require-module';
 
@@ -64,7 +64,7 @@ export default function validateDate(value, options) {
     before = parseDate(before, format);
 
     if (!date.isBefore(before, precision)) {
-      set(options, 'before', before.format(errorFormat));
+      options.before = before.format(errorFormat);
       return validationError('before', value, options);
     }
   }
@@ -73,7 +73,7 @@ export default function validateDate(value, options) {
     onOrBefore = parseDate(onOrBefore, format);
 
     if (!date.isSameOrBefore(onOrBefore, precision))  {
-      set(options, 'onOrBefore', onOrBefore.format(errorFormat));
+      options.onOrBefore = onOrBefore.format(errorFormat);
       return validationError('onOrBefore', value, options);
     }
   }
@@ -82,7 +82,7 @@ export default function validateDate(value, options) {
     after = parseDate(after, format);
 
     if (!date.isAfter(after, precision)) {
-      set(options, 'after', after.format(errorFormat));
+      options.after = after.format(errorFormat);
       return validationError('after', value, options);
     }
   }
@@ -91,7 +91,7 @@ export default function validateDate(value, options) {
     onOrAfter = parseDate(onOrAfter, format);
 
     if (!date.isSameOrAfter(onOrAfter, precision)) {
-      set(options, 'onOrAfter', onOrAfter.format(errorFormat));
+      options.onOrAfter = onOrAfter.format(errorFormat);
       return validationError('onOrAfter', value, options);
     }
   }
