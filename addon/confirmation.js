@@ -1,7 +1,7 @@
 import { get } from '@ember/object';
 import { assert } from '@ember/debug';
 import { isPresent, isEmpty, isEqual } from '@ember/utils';
-import validationError from 'ember-validators/utils/validation-error';
+import validationError from 'ember-validators-octane/utils/validation-error';
 
 /**
  *  @class Confirmation

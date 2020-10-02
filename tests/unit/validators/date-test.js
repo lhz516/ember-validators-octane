@@ -1,6 +1,6 @@
 import moment from 'moment';
 import { module, test } from 'qunit';
-import validate from 'ember-validators/date';
+import validate from 'ember-validators-octane/date';
 import processResult from '../../helpers/process-result';
 import cloneOptions from '../../helpers/clone-options';
 

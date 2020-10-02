@@ -1,6 +1,6 @@
 import { isEmpty, isNone } from '@ember/utils';
 import { getProperties, getWithDefault } from '@ember/object';
-import validationError from 'ember-validators/utils/validation-error';
+import validationError from 'ember-validators-octane/utils/validation-error';
 import requireModule from 'ember-require-module';
 
 const moment = requireModule('moment');

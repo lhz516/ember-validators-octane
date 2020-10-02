@@ -1,4 +1,4 @@
-import Messages from 'ember-validators/messages';
+import Messages from 'ember-validators-octane/messages';
 
 export default function processResult(result) {
   if (result && typeof result === 'object') {

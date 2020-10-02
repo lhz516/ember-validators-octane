@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import messages from 'ember-validators/messages';
+import messages from 'ember-validators-octane/messages';
 
 module('Unit | Validator | messages');
 

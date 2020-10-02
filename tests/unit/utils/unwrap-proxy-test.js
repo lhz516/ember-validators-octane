@@ -2,7 +2,7 @@ import { A } from '@ember/array';
 import ArrayProxy from '@ember/array/proxy';
 import ObjectProxy from '@ember/object/proxy';
 import { module, test } from 'qunit';
-import { default as unwrapProxy, isProxy } from 'ember-validators/utils/unwrap-proxy';
+import { default as unwrapProxy, isProxy } from 'ember-validators-octane/utils/unwrap-proxy';
 
 module('Unit | Util | unwrapProxy');
 

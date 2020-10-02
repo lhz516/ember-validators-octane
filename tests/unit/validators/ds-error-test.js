@@ -1,7 +1,7 @@
 import EmberObject from '@ember/object';
 import DS from 'ember-data';
 import { module, test } from 'qunit';
-import validate from 'ember-validators/ds-error';
+import validate from 'ember-validators-octane/ds-error';
 import processResult from '../../helpers/process-result';
 
 let model, result;

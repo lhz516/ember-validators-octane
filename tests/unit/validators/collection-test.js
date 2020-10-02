@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import validate from 'ember-validators/collection';
+import validate from 'ember-validators-octane/collection';
 import processResult from '../../helpers/process-result';
 import cloneOptions from '../../helpers/clone-options';
 

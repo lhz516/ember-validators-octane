@@ -1,6 +1,6 @@
 import { Promise } from 'rsvp';
 import { module, test } from 'qunit';
-import isPromise from 'ember-validators/utils/is-promise';
+import isPromise from 'ember-validators-octane/utils/is-promise';
 
 module('Unit | Util | isPromise');
 

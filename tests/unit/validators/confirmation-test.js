@@ -1,6 +1,6 @@
 import EmberObject from '@ember/object';
 import { module, test } from 'qunit';
-import validate from 'ember-validators/confirmation';
+import validate from 'ember-validators-octane/confirmation';
 import processResult from '../../helpers/process-result';
 import cloneOptions from '../../helpers/clone-options';
 

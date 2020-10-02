@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import { validate } from 'ember-validators';
+import { validate } from 'ember-validators-octane';
 
 module('Unit | Validator | index');
 

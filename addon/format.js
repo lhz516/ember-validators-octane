@@ -3,7 +3,7 @@ import { assert } from '@ember/debug';
 import { getProperties } from '@ember/object';
 
 import Ember from 'ember';
-import validationError from 'ember-validators/utils/validation-error';
+import validationError from 'ember-validators-octane/utils/validation-error';
 
 const {
   canInvoke
